@@ -4,9 +4,9 @@
 
 For details and FAQs, see [this _details_ document](docs/details.md) that has information on git, Java, the classes here, and more. This current file you're reading has project and coding details, but the linked document has more Java and git details, particularly about starting to code. That linked document includes information about project workflow including submitting code and analysis for grading via _Gradescope_. **Be sure to check [the _detail_ document](https://coursework.cs.duke.edu/201fall24/resources-201/-/blob/main/projectWorkflow.md) for how to use Git to obtain the project files, and workarounds if Git doesn't work yet for you. You'll need to refer to this P0 document when forking and cloning.**
 
-## Recording on Zoom
+## Use of ChatGPT
 
-For this project and every APT quiz, we ask that record your screen via Zoom. For APT quizzes, you will record for the full duration of the quiz, but for this project, you will only record **the first 20 minutes when you start coding** -- not when you start reading, but when you're ready to code. You'll submit a URL for a cloud Zoom recording [using the link https://duke.is/zoom-p0-fall24](https://duke.is/zoom-p0-fall24).
+You'll be asked to engage with ChatGPT in specific ways that will be here soon.
 
 ## Goals
 
@@ -19,18 +19,18 @@ For this project and every APT quiz, we ask that record your screen via Zoom. Fo
 
 ## Initial Engagement Points
 
-You can earn five **early-project engagement** points for this project. You must complete a task before end-of-day Monday to earn the points.
+You can earn five **early-project engagement** points for this project. You must complete a task before end-of-day TBD to earn the points.
 
 * Answer the questions on the [pre-project engagement form](https://bit.ly/p0-pre-engage) (2 points)
 * Modify the definition of `Person p` in the file `PostPerson.java` to represent you, and run the program to post the information for the class to use. (3 points)
 
 For the second engagement. You should use the latitude and longitude of what you consider either your hometown, where you last went to high school, or some city you'd like to visit (we will be creating a map of the cities identified by these coordinates). You can use your real name or you can use a pseudonym. For the final parameter, you **should use the name of one your favorite 9th street eateries**. It must be a restaurant from the following list:
 
-"Juju", "Lime and Lemon", "Dain's Place", "Banh's Cuisine", "Blue Corn Cafe", "Monuts", "Alpaca", "Kiichi Ramen", "Bali Hai Mongolian Grill", "Burger Bach", "Vin Rouge", "Devil's Pizzeria", "The Loop", "Elmo's Diner", "Local 22", "Parizade", "Metro 8 Steakhouse", "Common Market", "Cosmic Cantina", "Happy + Hale", "International Delights", "Play Bowls", "Szechuan Mansion Hotpot", "Panera", "Zenfish Poke Bar", "Chicken Bee", "Mad Hatter Cafe", "Genji", "Jimmy John's", "Heavenly Buffaloes", "The Tavern", "Guasaca", "Shuckin' Shack"
+"Juju", "Lime and Lemon", "Dain's Place", "Banh's Cuisine", "Monuts", "Alpaca", "Kiichi Ramen", "Bali Hai Mongolian Grill", "Vin Rouge", "Devil's Pizzeria", "The Loop", "Elmo's Diner", "Local 22", "Parizade", "Metro 8 Steakhouse", "Common Market", "Cosmic Cantina", "Happy + Hale", "International Delights", "Playa Bowls", "Szechuan Mansion Hotpot", "Panera", "Zenfish Poke Bar", "Chicken Bee", "Mad Hatter Cafe", "Genji", "Jimmy John's", "Heavenly Buffaloes", "The Tavern", "Guasaca", "Shuckin' Shack"
 
 ## Developing the classes in Project P0: Person201
 
-When you fork and clone the project, you'll be working primarily within the src folder with .java files -- many beginning with `Person201`. Your goal is to modify four programs/classes (`Person201.java`, `Person201Demo.java`, `CountEateries` and `Person201Nearby.java`), as well as to create a new program (`Person201Farthest.java`) to generate the desired output. As a challenge activity you'll be asked to determine the top/popular 9th street eateries among students in Compsci 201 this semester by creating a class/program `PopularEatery`.  
+When you fork and clone the project, you'll be working primarily within the src folder with .java files -- many beginning with `Person201`. Your goal is to modify four programs/classes (`Person201.java`, `Person201Demo.java`, `CountEateries` and `Person201Nearby.java`), as well as to create a new program (`Person201Farthest.java`) to generate the desired output. As a challenge activity you'll be asked to determine the top/popular 9th street eateries among students in Compsci 201 in Fall 2025 by creating a class/program `PopularEatery`.  
 
 
 ### Run `Person201Demo.java` and change `Person201.java`
