@@ -26,7 +26,12 @@ You can earn five **early-project engagement** points for this project. You must
 
 For the second engagement. You should use the latitude and longitude of what you consider either your hometown, where you last went to high school, or some city you'd like to visit (we will be creating a map of the cities identified by these coordinates). You can use your real name or you can use a pseudonym. For the final parameter, you **should use the name of one your favorite 9th street eateries**. It must be a restaurant from the following list:
 
-"Juju", "Lime and Lemon", "Dain's Place", "Banh's Cuisine", "Monuts", "Alpaca", "Kiichi Ramen", "Bali Hai Mongolian Grill", "Vin Rouge", "Devil's Pizzeria", "The Loop", "Elmo's Diner", "Local 22", "Parizade", "Metro 8 Steakhouse", "Common Market", "Cosmic Cantina", "Happy + Hale", "International Delights", "Playa Bowls", "Szechuan Mansion Hotpot", "Panera", "Zenfish Poke Bar", "Chicken Bee", "Mad Hatter Cafe", "Genji", "Jimmy John's", "Heavenly Buffaloes", "The Tavern", "Guasaca", "Shuckin' Shack"
+"Juju", "Lime and Lemon", "Dain's Place", "Banh's Cuisine", "Monuts", "Wheat", "Del Rancho Mexican Grill",
+"Alpaca", "Kiichi Ramen", "Bali Hai Mongolian Grill", "Vin Rouge", "Devil's Pizzeria", "The Loop", "Elmo's Diner", 
+"Local 22", "Parizade", "Metro 8 Steakhouse", "Common Market", "Cosmic Cantina", "Happy + Hale", "International Delights", 
+"Playa Bowls", "Szechuan Mansion Hotpot", "Panera", "Zenfish Poke Bar", "Chicken Bee", "Mad Hatter Cafe", "Genji", 
+"Jimmy John's", "Heavenly Buffaloes", "The Tavern", "Guasaca", "Shuckin' Shack", "Mi Cavillo Antojitos Mexican",
+"Sho Nuff Seafood", "Subway", "Moe's Original BBQ"
 
 ## Developing the classes in Project P0: Person201
 
