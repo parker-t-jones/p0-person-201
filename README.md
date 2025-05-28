@@ -43,7 +43,7 @@ When you fork and clone the project, you'll be working primarily within the src 
 First run the main method in `Person201Demo.java`, the output will be:
 
 ```
-(037.80N,122.27W) claire, "Blue Corn Cafe"
+(037.80N,122.27W) claire, "Vin Rouge"
 (001.29S,036.82E) ricardo, "Elmo's Diner"
 (040.71N,073.96W) julie, "Alpaca"
 names: claire, ricardo, julie

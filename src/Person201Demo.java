@@ -1,6 +1,6 @@
 public class Person201Demo {
     public static void main(String[] args) {
-        Person201 a = new Person201("claire",37.8044,-122.2712,"Blue Corn Cafe");
+        Person201 a = new Person201("claire",37.8044,-122.2712,"Vin Rouge");
         Person201 b = new Person201("ricardo",-1.2921, 36.8219,"Elmo's Diner");
         Person201 c = new Person201("julie",40.7081,-73.9571,"Alpaca");
 

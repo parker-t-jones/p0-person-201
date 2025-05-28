@@ -49,7 +49,7 @@ public class PostPerson {
     public static void main(String[] args) {
         PostPerson pp = new PostPerson();
 
-        Person201 p = new Person201("Sven",77.87,-20.975,"Cosmic Cantina");
+        Person201 p = new Person201("Gretchen",78.2253,-15.6256,"Subway");
         pp.postJson(URL,p);
     }
 }

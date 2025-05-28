@@ -1,8 +1,0 @@
-{
-    "java.project.sourcePaths": [
-        "src"
-    ],
-    "java.project.referencedLibraries": [
-        "gson-2.11.0.jar"
-    ]
-}
