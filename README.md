@@ -22,19 +22,16 @@ You'll be asked to engage with ChatGPT in specific ways that will be here soon.
 You can earn five **early-project engagement** points for this project. You must complete tasks as outlined below within the first four days
 of the project being released to earn the points.
 
-* Indicate the restaurants at which you've eaten by filling out this form: https://forms.cloud.microsoft/r/ZyL0ufxj41
+1. Indicate the restaurants at which you've eaten by filling out this form: https://forms.cloud.microsoft/r/ZyL0ufxj41 (1 point)
+2. Answer questions by running code or using DukeGPT about [`ReadRestaurants.java`](src/ReadRestaurants.java) 
+using [the form linked here](https://forms.cloud.microsoft/r/zWJKDJxFi5) (2 points)
+3. Modify the definition of `Person p` in the file [`PostPerson.java`](src/PostPerson.java) program
+to represent you, and run the program to post the information for the class to use. (2 points)
 
-* Answer the questions on the [pre-project engagement form](https://bit.ly/p0-pre-engage) (2 points)
-* Modify the definition of `Person p` in the file `PostPerson.java` to represent you, and run the program to post the information for the class to use. (3 points)
-
-For the second engagement. You should use the latitude and longitude of what you consider either your hometown, where you last went to high school, or some city you'd like to visit (we will be creating a map of the cities identified by these coordinates). You can use your real name or you can use a pseudonym. For the final parameter, you **should use the name of one your favorite 9th street eateries**. It must be a restaurant from the following list:
-
-"Juju", "Lime and Lemon", "Dain's Place", "Banh's Cuisine", "Monuts", "Wheat", "Del Rancho Mexican Grill",
-"Alpaca", "Kiichi Ramen", "Bali Hai Mongolian Grill", "Vin Rouge", "Devil's Pizzeria", "The Loop", "Elmo's Diner", 
-"Local 22", "Parizade", "Metro 8 Steakhouse", "Common Market", "Cosmic Cantina", "Happy + Hale", "International Delights", 
-"Playa Bowls", "Szechuan Mansion Hotpot", "Panera", "Zenfish Poke Bar", "Chicken Bee", "Mad Hatter Cafe", "Genji", 
-"Jimmy John's", "Heavenly Buffaloes", "The Tavern", "Guasaca", "Shuckin' Shack", "Mi Cavillo Antojitos Mexican",
-"Sho Nuff Seafood", "Subway", "Moe's Original BBQ"
+For the last engagement points you should use the latitude and longitude of where you last went to high school, 
+You can use your real name or you can use a pseudonym. 
+For the final parameter, you **should use the name of one your favorite 9th street eateries**. 
+It must be a restaurant from the [JSON file of restaurants](data/restaurants_ninth.json).
 
 ## Developing the classes in Project P0: Person201
 
