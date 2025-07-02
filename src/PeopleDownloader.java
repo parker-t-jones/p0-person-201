@@ -20,7 +20,7 @@ public class PeopleDownloader {
     private static ArrayList<Person201>
             ourList = new ArrayList<>();
 
-    public static String URL = "https://courses.cs.duke.edu/compsci201/fall24/data/p0/compsci201.log";
+    public static String URL = "https://courses.cs.duke.edu/compsci201/fall25/data/p0/compsci201.log";
 
 
     /**

@@ -46,7 +46,7 @@ rahkeem,47.5175,-120.4671,Kiichi Ramen
 koblick,47.0587,-123.7791,Dain's Place
 jadelynne,46.9685,-124.1521,Devil's Pizzeria
 tsivia,46.5891,-119.1567,Playa Bowls
-lalizar,47.1034,-122.0495,Bali Hai Mongolian Grill
+lalizar,47.1034,-122.0495,Kabab and Curry
 rosabella,45.7524,-122.5614,Lime and Lemon
 tolkien,48.2119,-122.063,Metro 8 Steakhouse
 demere,46.5391,-117.0861,Kiichi Ramen

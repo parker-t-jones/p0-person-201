@@ -67,7 +67,7 @@ public class Person201 {
         return String.format("(%s,%s) %s, \"%s\"",lats,lons,name,eatery);
     }
     public static void main(String[] args) {
-        Person201 p = new Person201("Owen",35.994, 78.898, "Dain's Place");
+        Person201 p = new Person201("Owen",41.271, 73.778, "Dain's Place");
         System.out.println(p);
     }
 }

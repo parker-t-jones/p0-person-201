@@ -14,7 +14,7 @@ import com.google.gson.*;
 
 public class PostPerson {
 
-    static String URL = "https://courses.cs.duke.edu/compsci201/fall24/data/p0/upload201.php";
+    static String URL = "https://courses.cs.duke.edu/compsci201/fall25/data/p0/upload201.php";
 
     /**
      * Create a post request to the specified URL and

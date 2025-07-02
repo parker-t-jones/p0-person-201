@@ -10,7 +10,7 @@ public class Person201Nearby {
 
         String largeFileName = "data/foodlarge.txt";
         String smallFileName = "data/foodsmall.txt";
-        String largeURL = "https://courses.cs.duke.edu/fall24/compsci201/data/foodlarge.txt";
+        String largeURL = "https://courses.cs.duke.edu/fall25/compsci201/data/foodlarge.txt";
         Person201[] people = Person201Utilities.readFile(largeFileName);
 
         System.out.println("distance\tperson");
