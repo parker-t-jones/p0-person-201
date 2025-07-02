@@ -19,7 +19,10 @@ You'll be asked to engage with ChatGPT in specific ways that will be here soon.
 
 ## Initial Engagement Points
 
-You can earn five **early-project engagement** points for this project. You must complete a task before end-of-day TBD to earn the points.
+You can earn five **early-project engagement** points for this project. You must complete tasks as outlined below within the first four days
+of the project being released to earn the points.
+
+* Indicate the restaurants at which you've eaten by filling out this form: https://forms.cloud.microsoft/r/ZyL0ufxj41
 
 * Answer the questions on the [pre-project engagement form](https://bit.ly/p0-pre-engage) (2 points)
 * Modify the definition of `Person p` in the file `PostPerson.java` to represent you, and run the program to post the information for the class to use. (3 points)
