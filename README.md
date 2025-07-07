@@ -6,7 +6,9 @@ For details and FAQs, see [this _details_ document](docs/details.md) that has in
 
 ## Use of ChatGPT
 
-You'll be asked to engage with DukeGPT/ChatGPT in specific ways that will linked to a document you'll find here.
+You'll be asked to engage with DukeGPT/ChatGPT in specific ways to answer some questions that are part 
+of the required *analysis* questions that are part of each project in 201. You'll see those
+questions and details in the #Analysis section.
 
 ## Goals
 
@@ -35,6 +37,15 @@ For the final parameter, you **should use the name of one your favorite 9th stre
 It must be a restaurant from the [JSON file of restaurants](data/restaurants_ninth.json).
 
 ## Developing the classes in Project P0: Person201
+
+There are four steps/code for you to complete, each is described in detail in sections below.
+
+1. Run `Person201Demo.java` and make a change to `Person201.java`.
+2. Run `Person201Nearby.java` and change the source of data that program uses.
+3. Create a new class, `Person201Farthest.java` modeled after code you download in `Person201Nearby.java`.
+4. Modify the code in `CountEateries.java`.
+
+There is an optional/challenge activity for you to complete. That's also described below.
 
 When you fork and clone the project, you'll be working primarily within the src folder with .java files -- many beginning with `Person201`. Your goal is to modify four programs/classes (`Person201.java`, `Person201Demo.java`, `CountEateries` and `Person201Nearby.java`), as well as to create a new program (`Person201Farthest.java`) to generate the desired output. As a challenge activity you'll be asked to determine the top/popular 9th street eateries among students in Compsci 201 in Fall 2025 by creating a class/program `PopularEatery`.  
 
