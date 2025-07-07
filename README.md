@@ -6,7 +6,9 @@ For details and FAQs, see [this _details_ document](docs/details.md) that has in
 
 ## Use of ChatGPT
 
-You'll be asked to engage with DukeGPT/ChatGPT in specific ways that will linked to a document you'll find here.
+You'll be asked to engage with DukeGPT/ChatGPT in specific ways to answer some questions that are part 
+of the required *analysis* questions that are part of each project in 201. You'll [see those
+questions and details in the Analysis section](#analysis) below.
 
 ## Goals
 
@@ -24,7 +26,8 @@ of the project being released to earn the points.
 
 1. Indicate the restaurants at which you've eaten by filling out this form: https://forms.cloud.microsoft/r/ZyL0ufxj41 (1 point)
 2. Answer questions by running code or using DukeGPT that are found on [the form linked here](https://forms.cloud.microsoft/r/zWJKDJxFi5) 
-about the program in [`ReadRestaurants.java`](src/ReadRestaurants.java) (2 points)
+about the program in [`ReadRestaurants.java`](src/ReadRestaurants.java). An example of a dialog with DukeGPT asking about the code 
+is accessible [in this downloaded DukeGPT example](docs/gson-reader-close.md) (2 points)
 3. Modify the definition of `Person p` in the file [`PostPerson.java`](src/PostPerson.java) program
 to represent you, and run the program to post the information for the class to use. (2 points)
 
@@ -34,6 +37,15 @@ For the final parameter, you **should use the name of one your favorite 9th stre
 It must be a restaurant from the [JSON file of restaurants](data/restaurants_ninth.json).
 
 ## Developing the classes in Project P0: Person201
+
+There are four steps/code for you to complete, each is described in detail in sections below.
+
+1. Run `Person201Demo.java` and make a change to `Person201.java`.
+2. Run `Person201Nearby.java` and change the source of data that program uses.
+3. Create a new class, `Person201Farthest.java` modeled after code you download in `Person201Nearby.java`.
+4. Modify the code in `CountEateries.java`.
+
+There is an optional/challenge activity for you to complete. That's also described below.
 
 When you fork and clone the project, you'll be working primarily within the src folder with .java files -- many beginning with `Person201`. Your goal is to modify four programs/classes (`Person201.java`, `Person201Demo.java`, `CountEateries` and `Person201Nearby.java`), as well as to create a new program (`Person201Farthest.java`) to generate the desired output. As a challenge activity you'll be asked to determine the top/popular 9th street eateries among students in Compsci 201 in Fall 2025 by creating a class/program `PopularEatery`.  
 
@@ -161,31 +173,38 @@ You'll submit by pushing your code to Git and using Gradescope. Details can be f
 
 ## Analysis
 
-Answer all the questions here. As outlined in [this document](docs/details.md) you'll submit a PDF with your answers to Gradescope as a separate assignment.
+Answer all the questions here. As outlined in [this document](docs/details.md) you'll submit a PDF with your answers to 
+Gradescope as a separate assignment.
 
-### Question 1 (1 point)
-- How many instance variables are there in the class `Person201`?
-- How many constructors are there in `Person201` after it has been modified?
+### Question 1 (2 points)
+- See this [example dialog with DukeGPT](docs/dukegpt-static-methods.md) asking the LLM to explain something 
+about static methods. Choose a Java concept that you have a question about, ask DukeGPT about the concept, and
+download the dialog as a PDF which you'll include as part of the PDF you upload to Gradescope.
+
 
 ### Question 2 (1 point)
-- Does the main method of your `Person201Farthest.java` create any objects of type `Person201Utilities`? Why or why not?
+- Does the main method of your `Person201Farthest.java` create any objects of type `Person201Utilities`? Why?
 
 ### Question 3 (2 points)
 
-What is the smallest value of variable `threshold` in `Person201Nearby` that yields exactly three people near to Ricardo. Write a few sentences about how you found the value, essentially providing an algorithm for anyone to replicate your work so that with a different/new data file they could find the smallest such value **efficiently**.
+What is the smallest value of variable `threshold` in `Person201Nearby` that yields exactly three people near to Ricardo. 
+Write a few sentences about how you found the value, essentially providing an algorithm for anyone to replicate 
+your work so that with a different/new data file they could find the smallest such value **efficiently**.
 
 
 ### Question 4 (2 points)
-The online data for this project read via URL is **not encrypted**. In a few sentences, why would it be reasonable to have the online data encrypted?
+The online data for this project read via URL is **not encrypted**. See
+this [DukeGPT dialog about why it might be a good idea to encrypt](docs/dukegpt-peopledownloader.md) and
+provide a few sentences about what makes sense and what doesn't in the answer DukeGPT provided.
 
 ### Question 5 (1 point)
-According to the `.equals` method of the `Person201` class, when are two `Person201` objects considered to be equal? Is it case sensitive for their names or for their phrases? (Case sensitive means different answers are returned depending on capitalization).
-
-### Question 6 (1 point)
-As stated at the start of this document and in the course policies, you should record via Zoom the first 20 minutes of you working at the beginning of this project and submit a link to that recording using [the link https://duke.is/zoom-p0-fall24](https://duke.is/zoom-p0-fall24). In your analysis document, include as an answer to this last question an affirmation "Yes, I submitted the URL for a Zoom recording." -- if, in fact, you did. Otherwise indicate you forgot to/refused to.
+According to the `.equals` method of the `Person201` class, when are two `Person201` objects considered to be equal? 
+Is it case sensitive for their names or for their 
+phrases? (Case sensitive means different answers are returned depending on capitalization). If you use DukeGPT or an LLM
+to help answer this question, please include that dialog.
 
 ### Challenge
-If you complete the challenge, be sure to write-up what you find.
+If you complete the challenge, please write up what you found. 
 
 ## Grading
 
