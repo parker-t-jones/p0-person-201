@@ -173,31 +173,38 @@ You'll submit by pushing your code to Git and using Gradescope. Details can be f
 
 ## Analysis
 
-Answer all the questions here. As outlined in [this document](docs/details.md) you'll submit a PDF with your answers to Gradescope as a separate assignment.
+Answer all the questions here. As outlined in [this document](docs/details.md) you'll submit a PDF with your answers to 
+Gradescope as a separate assignment.
 
-### Question 1 (1 point)
-- How many instance variables are there in the class `Person201`?
-- How many constructors are there in `Person201` after it has been modified?
+### Question 1 (2 points)
+- See this [example dialog with DukeGPT](docs/dukegpt-static-methods.md) asking the LLM to explain something 
+about static methods. Choose a Java concept that you have a question about, ask DukeGPT about the concept, and
+download the dialog as a PDF which you'll include as part of the PDF you upload to Gradescope.
+
 
 ### Question 2 (1 point)
-- Does the main method of your `Person201Farthest.java` create any objects of type `Person201Utilities`? Why or why not?
+- Does the main method of your `Person201Farthest.java` create any objects of type `Person201Utilities`? Why?
 
 ### Question 3 (2 points)
 
-What is the smallest value of variable `threshold` in `Person201Nearby` that yields exactly three people near to Ricardo. Write a few sentences about how you found the value, essentially providing an algorithm for anyone to replicate your work so that with a different/new data file they could find the smallest such value **efficiently**.
+What is the smallest value of variable `threshold` in `Person201Nearby` that yields exactly three people near to Ricardo. 
+Write a few sentences about how you found the value, essentially providing an algorithm for anyone to replicate 
+your work so that with a different/new data file they could find the smallest such value **efficiently**.
 
 
 ### Question 4 (2 points)
-The online data for this project read via URL is **not encrypted**. In a few sentences, why would it be reasonable to have the online data encrypted?
+The online data for this project read via URL is **not encrypted**. See
+this [DukeGPT dialog about why it might be a good idea to encrypt](docs/dukegpt-peopledownloader.md) and
+provide a few sentences about what makes sense and what doesn't in the answer DukeGPT provided.
 
 ### Question 5 (1 point)
-According to the `.equals` method of the `Person201` class, when are two `Person201` objects considered to be equal? Is it case sensitive for their names or for their phrases? (Case sensitive means different answers are returned depending on capitalization).
-
-### Question 6 (1 point)
-As stated at the start of this document and in the course policies, you should record via Zoom the first 20 minutes of you working at the beginning of this project and submit a link to that recording using [the link https://duke.is/zoom-p0-fall24](https://duke.is/zoom-p0-fall24). In your analysis document, include as an answer to this last question an affirmation "Yes, I submitted the URL for a Zoom recording." -- if, in fact, you did. Otherwise indicate you forgot to/refused to.
+According to the `.equals` method of the `Person201` class, when are two `Person201` objects considered to be equal? 
+Is it case sensitive for their names or for their 
+phrases? (Case sensitive means different answers are returned depending on capitalization). If you use DukeGPT or an LLM
+to help answer this question, please include that dialog.
 
 ### Challenge
-If you complete the challenge, be sure to write-up what you find.
+If you complete the challenge, please write up what you found. 
 
 ## Grading
 
