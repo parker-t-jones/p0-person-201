@@ -2,7 +2,8 @@ import java.io.IOException;
 import java.util.TreeSet;
 
 /**
- * For Compsci 201 P0 in Fall 2024
+ * For Compsci 201 P0 in Fall 2024 and Fall 2025
+ * Modified in July 2025
  * Students will write the method countEateries specified below
  */
 
@@ -43,6 +44,7 @@ public class CountEateries {
         for(Person201 p : people){
             eateries.add(p.eatery());
         }
+        System.out.printf("Information for %d different eateries\n",eateries.size());
         int total = 0;
         for(String eat : eateries){
             int count = countEateries(people, eat);

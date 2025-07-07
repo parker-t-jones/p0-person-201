@@ -15,7 +15,7 @@ public class Person201Nearby {
 
         System.out.println("distance\tperson");
         int total = 0;
-        int threshold = 20;
+        int threshold = 50;
         for (Person201 p : people) {
             double d = Person201Utilities.distance(query, p);   
             if (d < threshold) {
