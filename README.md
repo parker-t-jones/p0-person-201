@@ -7,8 +7,8 @@ For details and FAQs, see [this _details_ document](docs/details.md) that has in
 ## Use of ChatGPT
 
 You'll be asked to engage with DukeGPT/ChatGPT in specific ways to answer some questions that are part 
-of the required *analysis* questions that are part of each project in 201. You'll see those
-questions and details in the #Analysis section.
+of the required *analysis* questions that are part of each project in 201. You'll [see those
+questions and details in the Analysis section](#Analysis)
 
 ## Goals
 
