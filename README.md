@@ -6,7 +6,7 @@ For details and FAQs, see [this _details_ document](docs/details.md) that has in
 
 ## Use of ChatGPT
 
-You'll be asked to engage with ChatGPT in specific ways that will be here soon.
+You'll be asked to engage with DukeGPT/ChatGPT in specific ways that will linked to a document you'll find here.
 
 ## Goals
 
@@ -19,19 +19,19 @@ You'll be asked to engage with ChatGPT in specific ways that will be here soon.
 
 ## Initial Engagement Points
 
-You can earn five **early-project engagement** points for this project. You must complete a task before end-of-day TBD to earn the points.
+You can earn five **early-project engagement** points for this project. You must complete tasks as outlined below within the first four days
+of the project being released to earn the points.
 
-* Answer the questions on the [pre-project engagement form](https://bit.ly/p0-pre-engage) (2 points)
-* Modify the definition of `Person p` in the file `PostPerson.java` to represent you, and run the program to post the information for the class to use. (3 points)
+1. Indicate the restaurants at which you've eaten by filling out this form: https://forms.cloud.microsoft/r/ZyL0ufxj41 (1 point)
+2. Answer questions by running code or using DukeGPT that are found on [the form linked here](https://forms.cloud.microsoft/r/zWJKDJxFi5) 
+about the program in [`ReadRestaurants.java`](src/ReadRestaurants.java) (2 points)
+3. Modify the definition of `Person p` in the file [`PostPerson.java`](src/PostPerson.java) program
+to represent you, and run the program to post the information for the class to use. (2 points)
 
-For the second engagement. You should use the latitude and longitude of what you consider either your hometown, where you last went to high school, or some city you'd like to visit (we will be creating a map of the cities identified by these coordinates). You can use your real name or you can use a pseudonym. For the final parameter, you **should use the name of one your favorite 9th street eateries**. It must be a restaurant from the following list:
-
-"Juju", "Lime and Lemon", "Dain's Place", "Banh's Cuisine", "Monuts", "Wheat", "Del Rancho Mexican Grill",
-"Alpaca", "Kiichi Ramen", "Bali Hai Mongolian Grill", "Vin Rouge", "Devil's Pizzeria", "The Loop", "Elmo's Diner", 
-"Local 22", "Parizade", "Metro 8 Steakhouse", "Common Market", "Cosmic Cantina", "Happy + Hale", "International Delights", 
-"Playa Bowls", "Szechuan Mansion Hotpot", "Panera", "Zenfish Poke Bar", "Chicken Bee", "Mad Hatter Cafe", "Genji", 
-"Jimmy John's", "Heavenly Buffaloes", "The Tavern", "Guasaca", "Shuckin' Shack", "Mi Cavillo Antojitos Mexican",
-"Sho Nuff Seafood", "Subway", "Moe's Original BBQ"
+*Note:*. For the last engagement points you should use the latitude and longitude of where you last went to high school, 
+You can use your real name or you can use a pseudonym. 
+For the final parameter, you **should use the name of one your favorite 9th street eateries**. 
+It must be a restaurant from the [JSON file of restaurants](data/restaurants_ninth.json).
 
 ## Developing the classes in Project P0: Person201
 
@@ -50,17 +50,22 @@ names: claire, ricardo, julie
 Sam to Fred distance = 424.611 
 ```
 
-Make changes to `Person201.java` by creating a _default constructor_ and then changing the definition of `Person201 c` in `Person201Demo` that's currently defined as someone named **julie** to be `Person201 c = new Person201()` (note: _default constructor_ called). You must edit `Person201.java` so that with this change the output of `Person201Demo` will be as shown below. See the [help-doc/FAQ](docs/details.md) for more details on default constructors. Note the third line is now different.
+Make changes to `Person201.java` by creating a _default constructor_ and then changing the definition of `Person201 c` in `Person201Demo` that's currently defined as someone named **julie** to 
+be `Person201 c = new Person201()` (note: _default constructor_ called). 
+You must edit `Person201.java` so that with this change the output of `Person201Demo` will be as shown below. 
+See the [*help-doc/FAQ*](docs/details.md) for more details on default constructors. 
+Note that the third line is now different since a _default constructor_ is called.
 
 ```
-(037.80N,122.27W) claire, "Blue Corn Cafe"
+(037.80N,122.27W) claire, "Vin Rouge"
 (001.29S,036.82E) ricardo, "Elmo's Diner"
 (035.99N,078.90E) Owen, "Dain's Place"
 names: claire ricardo Owen
 Sam to Fred distance = 424.611
 ```
 
-Now that you've done this, make an additional change to the `main` method in file `Person201Demo.java` by creating a new `Person201` variable named `s` as follows:
+Now that you've done this, make an additional change to the `main` method in file `Person201Demo.java` by creating 
+a new `Person201` object assigned to the variable named `s` as follows:
 
 `Person201 s = new Person201("Ethan", 40.6782, 73.0442, "Monuts");`
 
@@ -68,7 +73,7 @@ Next, change the definition of the array `people` to include `s` such that `s` a
 `Person201[] datas = {a,b,c,s}`. Run the program,  the output should be as shown here (note `c` still using default constructor):
 
 ```
-(037.80N,122.27W) claire, "Blue Corn Cafe"
+(037.80N,122.27W) claire, "Vin Rouge"
 (001.29S,036.82E) ricardo, "Elmo's Diner"
 (035.99N,078.90E) Owen, "Dain's Place"
 (040.68N,073.04E) Ethan, "Monuts"
@@ -81,16 +86,29 @@ You're now done editing `Person201.java`!
 
 ### Running Person201Nearby and changing the Data Source
 
-Run the program `Person201Nearby`. It reads a data file and finds all the people in the data file who are within 50 miles of a person named Ricardo who lives near Seattle. The program prints there are 16 people when run with zero changes. Change the value of the variable `threshold` until exactly 3 people live within `threshold` miles of Ricardo. **Find the smallest `threshold` value that yields 3 people**, sos that any value less will yield two people. You'll report on this value and how you obtained it in answering the *analysis questions* below.
+Run the program `Person201Nearby`. It reads a data file and finds all the people in the data 
+file who are within 50 miles of a person named Ricardo who lives near Seattle. 
+The program prints there are 16 people when run with zero changes. 
+Change the value of the variable `threshold` until exactly 3 people live within `threshold` 
+miles of Ricardo. **Find the smallest `threshold` value that yields 3 people**, 
+so that any value less will yield two people. You'll report on this value and how you obtained it in 
+answering the *analysis questions* below.
 
-Lines 11-13 in `Person201Nearby` specify three data sources: a regular text file named `foodlarge.txt` in the `data` folder, a `foodsmall.txt` file in the `data` folder (line 12), and a URL (line 13). 
+Lines 11-13 in `Person201Nearby` specify three data sources: a regular text file 
+named `foodlarge.txt` in the `data` folder, a `foodsmall.txt` file in the `data` folder (line 12), 
+and a URL (line 13). 
 
 How many people live within 50 miles of Ricardo when using the file `foodsmall` as the data source? Answer in **analysis questions** below. Then change the code so that it reads data from the URL specified by the variable `largeURL`. You'll need to call the appropriate method in `Person201Utilities` to read a URL for a file, e.g., rather than calling `readFile` you'll call `readURL`. Verify that you get the same results from the URL as from the file in the data folder --  since that URL references the same data as the file `foodlarge` in the `data` folder. You'll answer questions about these runs in the **analysis questions** section. 
 
 
 ### Create and Run a New Java Class: **Person201Farthest**
 
-In the `src` folder create a new Java class named `Person201Farthest` (name the file `Person201Farthest.java`) that has only a `public static void main method` that allows the program to run. When run, the method should read the file `foodlarge.txt` in the `data` folder and determine the two distinct `Person201` objects that are the farthest apart. You may find the code in `Person201Nearby.java` useful in reasoning about the code you write. The program should print the two distinct objects that are farthest apart among all the objects created and returned when `PersonUtilities.readFile` is called from the code you write.
+In the `src` folder create a new Java class named `Person201Farthest` (name the file `Person201Farthest.java`) that has only a `public static void main method` that allows the program to run. When run, the 
+method should read the file `foodlarge.txt` in the `data` folder and determine the 
+two distinct `Person201` objects that are the farthest apart. 
+You may find the code in `Person201Nearby.java` useful in reasoning about the code you write. 
+The program should print the two distinct objects that are farthest apart among all the 
+objects created and returned when `PersonUtilities.readFile` is called from the code you write.
 
 The `main` method you write *must* use the code below 
 ```
@@ -107,7 +125,10 @@ See [the details](docs/details.md) documentation for details/hints.
 
 ### Modifying the code in `CountEateries.java`
 
-The code you download includes a class `CountEateries` that reads a file of data, e.g., `data/foodlarge.txt` and determines how many `Person201` objects like each of the 33 different Ninth Street eateries. When run, this count is printed as zero/0 for each eatery until you modify/add to the code in method `countEateries` which returns zero for every value of parameter `eatery`. You'll need to write code to count how many `Person201` objects, say named `p`, in the array parameter `people` have `p.eatery().equals(eatery)`. Write code by looping over the array and checking every object's `.eatery()` value for equality with parameter `eatery`. Copy/paste the output you get into your **analysis questions** document.
+The code you download includes a class `CountEateries` that reads a file of data, e.g., `data/foodlarge.txt` 
+and determines how many `Person201` objects like each of the 38 different Ninth Street eateries (there
+are 38 different eateries in the [JSON file](data/restaurants_ninth.json) in folder `data`, 
+but only 32 different eateries in the file read for this program: [`data/foodlarge.txt](data/foodlarge.txt). When run, this count is printed as zero/0 for each eatery until you modify/add to the code in method `countEateries` which returns zero for every value of parameter `eatery`. You'll need to write code to count how many `Person201` objects, say named `p`, in the array parameter `people` have `p.eatery().equals(eatery)`. Write code by looping over the array and checking every object's `.eatery()` value for equality with parameter `eatery`. Copy/paste the output you get into your **analysis questions** document.
 
 The last several lines of eatery data should be:
 ```
