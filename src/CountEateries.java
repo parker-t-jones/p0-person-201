@@ -5,6 +5,8 @@ import java.util.TreeSet;
  * For Compsci 201 P0 in Fall 2024 and Fall 2025
  * Modified in July 2025
  * Students will write the method countEateries specified below
+ * 
+ * @author ADD YOUR NAME HERE
  */
 
 public class CountEateries {

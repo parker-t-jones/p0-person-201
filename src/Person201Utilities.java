@@ -7,6 +7,9 @@ import java.net.*;
  * Has not changed over time, even when Person201 class changes
  * to record, or final string in a Person201 object changes as long
  * as it is a String.
+ * 
+ * @author Owen Astrachan
+ * @version 2.0, updated URI/URL code to be current with recent Java
  */
 
 public class Person201Utilities {

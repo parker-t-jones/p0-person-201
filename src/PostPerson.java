@@ -9,6 +9,8 @@ import com.google.gson.*;
  * fall 2021.
  * @Version 2: Fall 2024, updated network code
  * and changed Person201 to include 9th street eatery as final string
+ * @Version 3: Fall 2025, modified URL to be current for Fall 2025 semester
+ * 
  * @author Owen Astrachan, ola@duke.edu
  */
 

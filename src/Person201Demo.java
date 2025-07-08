@@ -1,3 +1,13 @@
+/**
+ * Used in Compsci 201 to demonstrate understanding of basic
+ * Java classes working together.
+ * 
+ * @author Owen Astrachan
+ * @author YOUR NAME HERE
+ * @version 2.0, modified for Fall 2025
+ */
+
+
 public class Person201Demo {
     public static void main(String[] args) {
         Person201 a = new Person201("claire",37.8044,-122.2712,"Vin Rouge");

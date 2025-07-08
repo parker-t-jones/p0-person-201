@@ -4,8 +4,11 @@
  * To be modified by students in 201, when you make
  * a modification, add yourself as an author in these
  * comments.
- * @version 3.0, Fall 2024, changed getters
- * to mirror record getters and phrase to eatery
+ * @author YOUR NAME HERE
+ * 
+ * @version 3.1, Fall 2025, changed getters
+ * to use names without a .get prefix and
+ * update to be current with version of assignment
  *
  */
 public class Person201 {
@@ -21,7 +24,8 @@ public class Person201 {
         this.eatery = eatery;
     }
 
-    // getters
+    // getters, comments maybe superfluous?
+    
     public String name(){
         return name;
     }
