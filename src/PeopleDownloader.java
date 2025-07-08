@@ -9,11 +9,20 @@ import com.google.gson.*;
 /**
  * Read information from a URL that has one json string
  * per line, each string representing a Person201 object.
- * Format of actual data on a line in URL is string,double,double,string
+ * Format of actual data on a line in file accessed by URL is string,double,double,string
  * but each line is assumed to be in the format
  * ip-address<>string,double,double,string
- * That is the data is assumed to be after the marker "<>"
- */
+ * That is the data is assumed to be after the marker "<>", e.g., 
+  
+10.194.139.181<>{"name":"Vance","latitude":32.7767,"longitude":96.797,"eatery":"Banh\u0027s Cuisine"}
+10.194.140.136<>{"name":"Noa","latitude":25.76,"longitude":80.19,"eatery":"Alpaca"}
+10.194.144.206<>{"name":"Alex","latitude":39.1405,"longitude":84.4802,"eatery":"Cosmic Cantina"}
+10.194.17.222<>{"name":"Brian","latitude":41.8781,"longitude":-87.6298,"eatery":"Juju"}
+
+@author Owen Astrachan
+@version 3.0, updated for Fall 2025
+
+*/
 
 public class PeopleDownloader {
     private final static String DELIM = "<>";
