@@ -137,7 +137,7 @@ public static void main(String[] args) throws Exception {
 ```
 See [the details](docs/details.md) documentation for details/hints.
 
-**  If you use DukeGPT/LLMs to help with the code**,  you should indicate that in the comments
+**If you use DukeGPT/LLMs to help with the code**,  you should indicate that in the comments
 of the new class you've written: `Person201Farthest.java`. You should also include Javadoc 
 comments in your source code file that include an @author tag. See the files you're given
 to help model what the comments might look like.
