@@ -81,6 +81,7 @@ public class PeopleDownloader {
             Person201[] pa = PeopleDownloader.loadData(URL);
             for(Person201 p : pa) {
                 System.out.println(p);
+                //System.out.printf("%s,%2.3f,%2.3f,%s\n",p.name(),p.latitude(),p.longitude(),p.eatery());
             }
             System.out.printf("total = %d\n",pa.length);
         }

@@ -48,7 +48,8 @@ public class Person201Utilities {
         double calc = Math.pow(Math.sin(deltaLat/2),2) +
                    Math.pow(Math.sin(deltaLong/2),2) *
                    Math.cos(alatRad) * Math.cos(blatRad);
-        double c = 2*Math.asin(Math.sqrt(calc));
+        double c = 2 * Math.atan2(Math.sqrt(calc), Math.sqrt(1-calc)); //2*Math.asin(Math.sqrt(calc));
+        
         return EARTH_RADIUS_KM * c;
     }
 
