@@ -26,7 +26,51 @@ of the project being released to earn the points.
 
 1. Indicate the restaurants at which you've eaten by filling out this form: https://forms.cloud.microsoft/r/ZyL0ufxj41 (1 point)
 2. Answer questions by running code or using DukeGPT that are found on [the form linked here](https://forms.cloud.microsoft/r/zWJKDJxFi5) 
-about the program in [`ReadRestaurants.java`](src/ReadRestaurants.java). An example of a dialog with DukeGPT asking about the code 
+about the program in [`ReadRestaurants.java`](src/ReadRestaurants.java).
+<details>
+<summary>click here to see the output of running the program</summary>
+<pre>
+Peruvian chicken    	Alpaca
+Vietnamese & Chinese	Banh's Cuisine
+Korean fried chicken	Chicken Bee
+Casual market, café 	Common Market
+Tex-Mex             	Cosmic Cantina
+American pub        	Dain's Place
+Mexican             	Del Rancho Mexican Grill
+New York pizza, Wings	Devil's Pizzeria
+American diner      	Elmo's Diner
+Sushi               	Genji
+Colombian arepas    	Guasaca
+Healthy bowls       	Happy + Hale
+Chicken, Wings, Fries	Heavenly Buffaloes
+Mediterranean       	International Delights
+Sandwiches          	Jimmy John's
+Asian fusion        	Juju
+Indian and Nepalese 	Kabab and Curry
+Japanese ramen      	Kiichi Ramen
+Japanese            	Koi Sushi and Hibachi
+Indian              	Lime & Lemon
+Gastropub           	Local 22
+Bakery, café        	Mad Hatter Cafe
+Steakhouse          	Metro 8 Steakhouse
+Mexican street food 	Mi Calvillo Antojitos Mexican
+Southern BBQ        	Moe's Original BBQ
+Bakery, Cafe        	Monuts
+Sandwiches, Salads  	Panera
+Mediterranean       	Parizade
+Acai bowls, Smoothies	Playa Bowls
+Fried/Boiled Seafood	Sho Nuff Seafood
+Oysters/Seafood     	Shuckin' Shack
+Fast‑food sandwiches	Subway
+Szechuan hot pot    	Szechuan Mansion Hotpot
+Burgers, Pizza      	The Loop
+Dive Bar/Tavern     	The Tavern
+French bistro       	Vin Rouge
+Asian Noodles, Desert	Wheat
+Poke bowls          	Zenfish Poke Bar
+</pre>
+</details>
+An example of a dialog with DukeGPT asking about the code 
 is accessible [in this downloaded DukeGPT example](docs/gson-reader-close.md) (2 points)
 3. Modify the definition of `Person p` in the file [`PostPerson.java`](src/PostPerson.java) program
 to represent you, and run the program to post the information for the class to use. (2 points)
