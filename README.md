@@ -27,8 +27,18 @@ of the project being released to earn the points.
 1. Indicate the restaurants at which you've eaten by filling out this form: https://forms.cloud.microsoft/r/ZyL0ufxj41 (1 point)
 2. Answer questions by running code or using DukeGPT that are found on [the form linked here](https://forms.cloud.microsoft/r/zWJKDJxFi5) 
 about the program in [`ReadRestaurants.java`](src/ReadRestaurants.java).
+An example of a dialog with DukeGPT asking about the code 
+is accessible [in this downloaded DukeGPT example](docs/gson-reader-close.md) (2 points)
+3. Modify the definition of `Person p` in the file [`PostPerson.java`](src/PostPerson.java) program
+to represent you, and run the program to post the information for the class to use. (2 points)
+
+    *Note:* For the last engagement points you should use the latitude and longitude of where you last went to high school, 
+You can use your real name or you can use a pseudonym. 
+For the final parameter, you **should use the name of one your favorite 9th street eateries**. 
+It must be a restaurant from the [JSON file of restaurants](data/restaurants_ninth.json).
+
 <details>
-<summary>click here to see the output of running the program</summary>
+<summary>click here to see the output of running the program ReadRestaurants</summary>
 <pre>
 Peruvian chicken    	Alpaca
 Vietnamese & Chinese	Banh's Cuisine
@@ -70,15 +80,6 @@ Asian Noodles, Desert	Wheat
 Poke bowls          	Zenfish Poke Bar
 </pre>
 </details>
-An example of a dialog with DukeGPT asking about the code 
-is accessible [in this downloaded DukeGPT example](docs/gson-reader-close.md) (2 points)
-3. Modify the definition of `Person p` in the file [`PostPerson.java`](src/PostPerson.java) program
-to represent you, and run the program to post the information for the class to use. (2 points)
-
-    *Note:* For the last engagement points you should use the latitude and longitude of where you last went to high school, 
-You can use your real name or you can use a pseudonym. 
-For the final parameter, you **should use the name of one your favorite 9th street eateries**. 
-It must be a restaurant from the [JSON file of restaurants](data/restaurants_ninth.json).
 
 ## Developing the classes in Project P0: Person201
 
