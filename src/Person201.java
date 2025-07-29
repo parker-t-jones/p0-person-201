@@ -48,14 +48,6 @@ public class Person201 {
                eatery().equals(other.eatery());
     }
 
-    /** 
-    @Override
-    public int hashCode(){
-        int location = (int) (latitude()*100+longitude());
-        return location + name().hashCode() + eatery().hashCode();
-    }
-        **/
-
     /**
      * Returns String using E/W for longitude, N/S for latitude
      */

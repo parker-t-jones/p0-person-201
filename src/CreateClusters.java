@@ -2,6 +2,11 @@ import java.io.*;
 import java.util.*;
 import com.google.gson.*;
 
+/**
+ * Create clusters from geographic (lat,long) data using
+ * Density Based Spacial Cluster Algorithm (DBSCAN) 
+ * @author Owen Astrachan
+ */
 
 public class CreateClusters {
     private double myEpsilon;
@@ -45,10 +50,10 @@ public class CreateClusters {
         return ret;
     }
 
-    private void expandCluster(Person201 p, List<Person201> nearby, 
+    private void expandCluster(Person201 person, List<Person201> nearby, 
                                int clusterID, Person201[] people,
                                Set<Person201> visited) {
-        myClusterMap.put(p,clusterID);
+        myClusterMap.put(person,clusterID);
         Queue<Person201> q = new LinkedList<>(nearby);
 
         while (! q.isEmpty()){
@@ -67,6 +72,13 @@ public class CreateClusters {
         }
     }
 
+    /**
+     * Return list of all elements of list that are within myEpsilon (distance)
+     * of center.
+     * @param list is a list of Person201 objects
+     * @param center is the anchor/center of region returned
+     * @return all elements of list withing myEpsilon of center
+     */
     private List<Person201> withinRegion(Person201[] list, Person201 center){
         List<Person201> ret = new ArrayList<>();
         for(Person201 p : list){
@@ -77,6 +89,13 @@ public class CreateClusters {
         return ret;
     }
 
+    /**
+     * Exports data in JSON format for visualization. Gson JSON format
+     * is like a map (keys,values) so map created for each object
+     * @param clusters is the clusters written in JSON format
+     * @param fname is name of file being written
+     * @throws IOException if writing to file fails
+     */
     public void exportJSON(List<List<Person201>> clusters, String fname) throws IOException{
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         List<Map<String, Object>> output = new ArrayList<>();
