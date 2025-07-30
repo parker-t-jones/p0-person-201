@@ -30,12 +30,14 @@ about the program in [`ReadRestaurants.java`](src/ReadRestaurants.java).
 An example of a dialog with DukeGPT asking about the code 
 is accessible [in this downloaded DukeGPT example](docs/gson-reader-close.md) (2 points)
 3. Modify the definition of `Person p` in the file [`PostPerson.java`](src/PostPerson.java) program
-to represent you, and run the program to post the information for the class to use. (2 points)
+to represent you, and run the program to post the information for the class to use. You must
+submit the same information [via this form](https://forms.cloud.microsoft/r/kyH16BCMzi) (2 points)
 
-    *Note:* For the last engagement points you should use the latitude and longitude of where you last went to high school, 
+    *Note:* For the last engagement points you should use the latitude and longitude (Note that latitude is positive north of the equator, negative south; longitude is negative west of the Prime/Greenwich Meridian and positive east. Durham, NC is (35.9956, -78.9002)) of where you last went to high school, 
 You can use your real name or you can use a pseudonym. 
 For the final parameter, you **should use the name of one your favorite 9th street eateries**. 
 It must be a restaurant from the [JSON file of restaurants](data/restaurants_ninth.json).
+ 
 
 <details>
 <summary>click here to see the output of running the program ReadRestaurants</summary>
