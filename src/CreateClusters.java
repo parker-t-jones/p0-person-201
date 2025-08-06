@@ -4,38 +4,76 @@ import com.google.gson.*;
 
 /**
  * Create clusters from geographic (lat,long) data using
- * Density Based Spacial Cluster Algorithm (DBSCAN) 
+ * Density Based Spacial Cluster Algorithm (DBSCAN).  
+ * 
  * @author Owen Astrachan
  */
 
 public class CreateClusters {
+
+    /**
+     * Instance variables used in creating clusters. Variables
+     * myEpsilon and myMinNeighbors define a cluster
+     * 
+     * myClusterMap is updated by calls to public methods
+     * so that earch person/site is mapped to a number indicating
+     * what cluster it is in. Cluster number zero is reserved for 
+     * isolated/outlier sites, not part of any cluster. Actual
+     * clusters start at one.
+     */
     private double myEpsilon;
     private int myMinNeighbors;
     private Map<Person201,Integer> myClusterMap;
 
+    /**
+     * CreateCluster creates clusters with a minimal number of sites
+     * in a cluster, and a minimal distance from a cluster's "center"
+     * @param eps is the minimal epsilon for a site from a cluster's center
+     * @param min is the minimal number of sites to be considered a cluster
+     */
     public CreateClusters(double eps, int min){
         myEpsilon = eps;
         myMinNeighbors = min;
         myClusterMap = new HashMap<>();
     }
 
+    /**
+     * Using minimal number of sites and minimal epsilon create
+     * clusters from the data in parameter people, return a list
+     * of clusters, each element of the returned list is a cluster
+     * @param people is the data from which clusters are created
+     * @return a list of clusters. Each list that's an element of the
+     * returned list is a cluster
+     */
     public List<List<Person201>> createClusters(Person201[] people) {
         int clusterID = 1;
         Set<Person201> visited = new HashSet<>();
 
+        /**
+         * Consider each element of parameter people as a potential center
+         * for a cluster. If it's a center, update information in
+         * instance varaible myClusterMap. 
+         */
+
         for(Person201 p : people){
-            if (visited.contains(p)) continue;
+            if (visited.contains(p)) continue; // already in a cluster
+
             visited.add(p);
 
             List<Person201> nearby = withinRegion(people, p);
             if (nearby.size() < myMinNeighbors){
-                myClusterMap.put(p,0);
+                myClusterMap.put(p,0);   // outlier, not in a cluster
             }
             else {
                 expandCluster(p,nearby,clusterID,people,visited);                         
                 clusterID += 1;
             }
         }
+        /**
+         * Clusters were created by associating a number witih
+         * each site/person. Create a new map that associates
+         * each cluster number with a list of people in that cluster
+         */
         Map<Integer, List<Person201>> clusters = new HashMap<>();
         for(Person201 p : people){
             if (myClusterMap.containsKey(p)){
@@ -50,6 +88,7 @@ public class CreateClusters {
         return ret;
     }
 
+    
     private void expandCluster(Person201 person, List<Person201> nearby, 
                                int clusterID, Person201[] people,
                                Set<Person201> visited) {
