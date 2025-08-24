@@ -88,23 +88,39 @@ public class CreateClusters {
         return ret;
     }
 
-    
+    /**
+     * Given a center, and a cluster/list of those within myEpsilon of center, as well
+     * as a set of those already processed, find all sites/people within myEpsilon
+     * of anyone in the cluster, and for each site/person added, within myEpsilon of that
+     * site/person. Cluster is expanded by associating all people in the cluster
+     * with the specified clusterID
+     * @param person is the center of the cluster 
+     * @param nearby is list of those within myEpsilon of center
+     * @param clusterID is the cluster ID of this cluster
+     * @param people is the list of all sites/people to consider
+     * @param visited is the list of sites/pepole already assigned to a cluster
+     * 
+     * @side-effect: alters instance variable myClusterMap to associate
+     * all those in the cluster with parameter clusterID
+     */
     private void expandCluster(Person201 person, List<Person201> nearby, 
                                int clusterID, Person201[] people,
                                Set<Person201> visited) {
-        myClusterMap.put(person,clusterID);
-        Queue<Person201> q = new LinkedList<>(nearby);
 
-        while (! q.isEmpty()){
-            Person201 next = q.remove();
-            if (! visited.contains(next)) {
+        myClusterMap.put(person,clusterID);             // center has given ID
+        List<Person201> list = new ArrayList<>(nearby);
+
+        while (list.size() > 0){
+            Person201 next = list.remove(list.size()-1); // check who is near this site/person
+            if (! visited.contains(next)) {              // if they aren't already processed
                 visited.add(next);
                 
-                List<Person201> list = withinRegion(people, next);
-                if (list.size() >= myMinNeighbors){
-                    q.addAll(list);
+                List<Person201> close = withinRegion(people, next);
+                if (close.size() >= myMinNeighbors){
+                    list.addAll(close);
                 }
             }
+            // site/person next in the given cluster not already processed have clusterID
             if (! myClusterMap.containsKey(next) || myClusterMap.get(next) == 0){
                 myClusterMap.put(next,clusterID);
             }          
