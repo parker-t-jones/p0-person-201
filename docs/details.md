@@ -1,12 +1,12 @@
 ## Starter Code and Using Git
 **_You should have installed all software (Java, Git, VS Code) before completing this project._** You can find 
-the [directions for installation here](https://coursework.cs.duke.edu/201fall24/resources-201/-/blob/main/installingSoftware.md) (including workarounds for submitting without Git if needed).
+the [directions for installation here](https://coursework.cs.duke.edu/201fall25/resources-201/-/blob/main/installingSoftware.md) (including workarounds for submitting without Git if needed).
 
 We'll be using Git and the installation of GitLab at [coursework.cs.duke.edu](https://coursework.cs.duke.edu). All code for classwork will be kept here. Git is software used for version control, and GitLab is an online repository to store code in the cloud using Git.
 
-For this project, you **start with the URL linked to course calendar**, [https://coursework.cs.duke.edu/201fall24/p0-person201-fall2024](https://coursework.cs.duke.edu/201fall24/p0-person201-fall2024).
+For this project, you **start with the URL linked to course calendar**, [https://coursework.cs.duke.edu/201fall25/p0-person201-fall2025](https://coursework.cs.duke.edu/201fall25/p0-person201-fall2025).
 
-**[This document details the workflow](https://coursework.cs.duke.edu/201fall24/resources-201/-/blob/main/projectWorkflow.md) for downloading the starter code for the project, updating your code on coursework using Git, and ultimately submitting to Gradescope for autograding.** We recommend that you read and follow the directions carefully this first time working on a project! While coding, we recommend that you periodically (perhaps when completing a method or small section) push your changes as explained in Section 5.
+**[This document details the workflow](https://coursework.cs.duke.edu/201fall25/resources-201/-/blob/main/projectWorkflow.md) for downloading the starter code for the project, updating your code on coursework using Git, and ultimately submitting to Gradescope for autograding.** We recommend that you read and follow the directions carefully this first time working on a project! While coding, we recommend that you periodically (perhaps when completing a method or small section) push your changes as explained in Section 5.
 
 
 ## Coding in Project P0: Person201
@@ -50,7 +50,10 @@ When you have finished, run the main method of your new `Person201Farthest` clas
 
 ## Writing Person201Farthest
 
-In the main description you're given the beginning code for the `main` method you must write to determine the two objects that are farthest apart. You must write code to compare every possible pair of `Person201` objects. Typically you'll need nested loops for that unless you write a helper method -- in which case the loops will be nested, but the loop code in one place calls the helper function loop rather than seeing code like:
+In the main description you're given the beginning code for the `main` method you must write to determine the two objects that are farthest apart. 
+You must write code to compare every possible pair of `Person201` objects. Typically you'll need nested loops for that unless you 
+write a helper method -- in which case the loops will be nested, but the loop code in one place calls the helper function 
+loop rather than seeing code like:
 
 ```
    for(int j= ....){
