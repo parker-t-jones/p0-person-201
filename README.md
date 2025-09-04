@@ -136,7 +136,7 @@ Next, change the definition of the array `people` to include `s` such that `s` a
 (001.29S,036.82E) ricardo, "Elmo's Diner"
 (035.99N,078.90E) Owen, "Dain's Place"
 (040.68N,073.04E) Ethan, "Monuts"
-names: claire, ricardo, Owen, Ethan
+names: claire, ricardo, Owen
 Sam to Fred distance = 424.611
 ```
 
