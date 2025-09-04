@@ -153,7 +153,7 @@ Change the value of the variable `threshold` until exactly 3 people live within 
 miles of Ricardo. **Find the smallest `threshold` value that yields 3 people**, 
 so that any value less will yield two people. You'll report on this value and how you obtained it in answering the *analysis questions* below.
 
-Lines 11-13 in `Person201Nearby` specify three data sources: a regular text file 
+Lines 14-16 in `Person201Nearby` specify three data sources: a regular text file 
 named `foodlarge.txt` in the `data` folder, a `foodsmall.txt` file in the `data` folder (line 12), 
 and a URL (line 13). 
 
