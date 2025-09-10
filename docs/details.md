@@ -11,7 +11,7 @@ For this project, you **start with the URL linked to course calendar**, [https:/
 
 ## Coding in Project P0: Person201
 
-When you fork and clone the project, **make sure you open the correct project folder in VS Code** following the [This document details the workflow](https://coursework.cs.duke.edu/201fall24/resources-201/-/blob/main/projectWorkflow.md).
+When you fork and clone the project, **make sure you open the correct project folder in VS Code** following the [This document details the workflow](https://coursework.cs.duke.edu/201fall25/resources-201/-/blob/main/projectWorkflow.md).
 
 You will be working primarily with the `.java` files in the `src` folder beginning with `Person201.java`. You will modify two programs/classes (`Person201.java`,  `Person201Demo.java`), and will run `Person201Nearby.java` to see if your changes are working. Then you will create a new program called `Person201Farthest.java`.
 
