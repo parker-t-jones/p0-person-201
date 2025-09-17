@@ -128,8 +128,8 @@ a new `Person201` object assigned to the variable named `s` as follows:
 
 `Person201 s = new Person201("Ethan", 40.6782, 73.0442, "Monuts");`
 
-Next, change the definition of the array `people` to include `s` such that `s` appears after `c`, e.g., 
-`Person201[] datas = {a,b,c,s}`. Run the program,  the output should be as shown here (note `c` still using default constructor):
+Next, change the definition of the array `data` to include `s` such that `s` appears after `c`, e.g., 
+`Person201[] data = {a,b,c,s}`. Run the program,  the output should be as shown here (note `c` still using default constructor):
 
 ```
 (037.80N,122.27W) claire, "Vin Rouge"
@@ -154,8 +154,8 @@ miles of Ricardo. **Find the smallest `threshold` value that yields 3 people**,
 so that any value less will yield two people. You'll report on this value and how you obtained it in answering the *analysis questions* below.
 
 Lines 14-16 in `Person201Nearby` specify three data sources: a regular text file 
-named `foodlarge.txt` in the `data` folder, a `foodsmall.txt` file in the `data` folder (line 12), 
-and a URL (line 13). 
+named `foodlarge.txt` in the `data` folder, a `foodsmall.txt` file in the `data` folder (line 15), 
+and a URL (line 16). 
 
 How many people live within 50 miles of Ricardo when using the file `foodsmall` as the data source? You should run the program and be able to answer this question given a new data file as well as with the two provided. 
 
@@ -194,7 +194,7 @@ to help model what the comments might look like.
 The code you download includes a class `CountEateries` that reads a file of data, e.g., `data/foodlarge.txt` 
 and determines how many `Person201` objects like each of the 38 different Ninth Street eateries (there
 are 38 different eateries in the [JSON file](data/restaurants_ninth.json) in folder `data`, 
-but only 32 different eateries in the file read for this program: [`data/foodlarge.txt](data/foodlarge.txt). When run, this count is printed as zero/0 for each eatery **until you modify/add to the code in method `countEateries`** which initially returns zero for every value of parameter `eatery`. You'll need to write code to count how many `Person201` objects, say named `p`, in the array parameter `people` have `p.eatery().equals(eatery)`. Write code by looping over the array and checking every object's `.eatery()` value for equality with parameter `eatery`. Copy/paste the output you get into your **analysis questions** document.
+but only 32 different eateries in the file read for this program: [`data/foodlarge.txt`](data/foodlarge.txt). When run, this count is printed as zero/0 for each eatery **until you modify/add to the code in method `countEateries`** which initially returns zero for every value of parameter `eatery`. You'll need to write code to count how many `Person201` objects, say named `p`, in the array parameter `people` have `p.eatery().equals(eatery)`. Write code by looping over the array and checking every object's `.eatery()` value for equality with parameter `eatery`. Copy/paste the output you get into your **analysis questions** document.
 
 The last several lines of eatery data should be:
 ```
