@@ -5,6 +5,7 @@
  * 
  * @author Owen Astrachan
  * @version 2.0 revised for Fall 2025
+ * @version 2.1 updated for Spring 2026
  */
 
 public class Person201Nearby {
@@ -13,7 +14,7 @@ public class Person201Nearby {
 
         String largeFileName = "data/foodlarge.txt";
         String smallFileName = "data/foodsmall.txt";
-        String largeURL = "https://courses.cs.duke.edu/fall25/compsci201/data/foodlarge.txt";
+        String largeURL = "https://courses.cs.duke.edu/spring26/compsci201/data/foodlarge.txt";
         
         Person201[] people = Person201Utilities.readFile(largeFileName);
 

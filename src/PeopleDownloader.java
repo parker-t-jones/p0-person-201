@@ -20,17 +20,15 @@ import com.google.gson.*;
 10.194.17.222<>{"name":"Brian","latitude":41.8781,"longitude":-87.6298,"eatery":"Juju"}
 
 @author Owen Astrachan
-@version 3.0, updated for Fall 2025
+@version 3.0, updated for Spring 2026
 
 */
 
 public class PeopleDownloader {
     private final static String DELIM = "<>";
-    private static ArrayList<Person201>
-            ourList = new ArrayList<>();
+    private static ArrayList<Person201> ourList = new ArrayList<>();
 
-    public static String URL = "https://courses.cs.duke.edu/compsci201/fall25/data/p0/compsci201.log";
-
+    public static String URL = "https://courses.cs.duke.edu/compsci201/spring26/data/p0/201fall25.log";
 
     /**
      * Read the info in the specified URL, a text file which
@@ -67,7 +65,7 @@ public class PeopleDownloader {
                     }
                 }
                 catch (JsonParseException jspe) {
-                    // silently avoid bad json syntax
+                    // print json syntax issues
                     System.err.println("**ERROR "+jspe);
                 }
             }

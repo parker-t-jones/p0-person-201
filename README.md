@@ -2,7 +2,7 @@
 
 ## Obtaining Project Code and Project Details
 
-For details and FAQs, see [this _details_ document](docs/details.md) that has information on git, Java, the classes here, and more. This current file you're reading has project and coding details, but the linked document has more Java and git details, particularly about starting to code. That linked document includes information about project workflow including submitting code and analysis for grading via _Gradescope_. **Be sure to check [the _detail_ document](https://coursework.cs.duke.edu/201fall24/resources-201/-/blob/main/projectWorkflow.md) for how to use Git to obtain the project files, and workarounds if Git doesn't work yet for you. You'll need to refer to this P0 document when forking and cloning.**
+For details and FAQs, see [this _details_ document](docs/details.md) that has information on git, Java, the classes here, and more. This current file you're reading has project and coding details, but the linked document has more Java and git details, particularly about starting to code. That linked document includes information about project workflow including submitting code and analysis for grading via _Gradescope_. **Be sure to check [the _detail_ document](https://coursework.cs.duke.edu/201spring26/resources-201/-/blob/main/projectWorkflow.md) for how to use Git to obtain the project files, and workarounds if Git doesn't work yet for you. You'll need to refer to this P0 document when forking and cloning.**
 
 ## Use of ChatGPT
 
@@ -24,8 +24,8 @@ questions and details in the Analysis section](#analysis) below.
 You can earn five **early-project engagement** points for this project. You must complete tasks as outlined below **within the first four days**
 of the project being released to earn the points.
 
-1. Indicate the restaurants at which you've eaten by filling out this form: https://forms.cloud.microsoft/r/ZyL0ufxj41 (1 point)
-2. Answer questions by running code or using DukeGPT that are found on [the form linked here](https://forms.cloud.microsoft/r/zWJKDJxFi5) 
+1. Indicate the restaurants at which you've eaten by [filling out this form](https://forms.cloud.microsoft/r/WSiBVgnjr2) (1 point)
+2. Answer questions by running code or using DukeGPT that are found on [the form linked here](https://forms.office.com/r/WwZY17caKn) 
 about the program in [`ReadRestaurants.java`](src/ReadRestaurants.java).
 An example of a dialog with DukeGPT asking about the code 
 is accessible [in this downloaded DukeGPT example](docs/gson-reader-close.md) (2 points)

@@ -2,8 +2,8 @@ import java.io.IOException;
 import java.util.TreeSet;
 
 /**
- * For Compsci 201 P0 in Fall 2024 and Fall 2025
- * Modified in July 2025
+ * For Compsci 201 P0 in Fall 24,25, Spring 26
+ * Modified in December 2026
  * Students will write the method countEateries specified below
  * 
  * @author ADD YOUR NAME HERE

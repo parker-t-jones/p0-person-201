@@ -3,7 +3,7 @@
  * Java classes working together.
  * 
  * @author Owen Astrachan
- * @author YOUR NAME HERE
+ * @author PLEASE ADD YOUR NAME HERE
  * @version 2.0, modified for Fall 2025
  */
 

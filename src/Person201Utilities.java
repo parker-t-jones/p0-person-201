@@ -84,6 +84,12 @@ public class Person201Utilities {
         return result;
     }
 
+    /**
+     * helper method to access well-formed data via a Scanner.
+     * Typically Scanner is bound to a file or a URL
+     * @param s is the Scanner read line-by-line
+     * @return array of data read by Scanner
+     */
     private static Person201[] readFromScanner(Scanner s) {
         ArrayList<Person201> list = new ArrayList<>();
 
