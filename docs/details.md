@@ -1,17 +1,17 @@
 ## Starter Code and Using Git
 **_You should have installed all software (Java, Git, VS Code) before completing this project._** You can find 
-the [directions for installation here](https://coursework.cs.duke.edu/201fall25/resources-201/-/blob/main/installingSoftware.md) (including workarounds for submitting without Git if needed).
+the [directions for installation here](https://coursework.cs.duke.edu/201spring26/resources-201/-/blob/main/installingSoftware.md) (including workarounds for submitting without Git if needed).
 
 We'll be using Git and the installation of GitLab at [coursework.cs.duke.edu](https://coursework.cs.duke.edu). All code for classwork will be kept here. Git is software used for version control, and GitLab is an online repository to store code in the cloud using Git.
 
-For this project, you **start with the URL linked to course calendar**, [https://coursework.cs.duke.edu/201fall25/p0-person201-fall2025](https://coursework.cs.duke.edu/201fall25/p0-person201-fall2025).
+For this project, you **start with the URL linked to course calendar**, [https://coursework.cs.duke.edu/201spring26/p0-person201-Spring26](https://coursework.cs.duke.edu/201spring26/p0-person201-Spring2026).
 
-**[This document details the workflow](https://coursework.cs.duke.edu/201fall25/resources-201/-/blob/main/projectWorkflow.md) for downloading the starter code for the project, updating your code on coursework using Git, and ultimately submitting to Gradescope for autograding.** We recommend that you read and follow the directions carefully this first time working on a project! While coding, we recommend that you periodically (perhaps when completing a method or small section) push your changes as explained in Section 5.
+**[This document details the workflow](https://coursework.cs.duke.edu/201spring26/resources-201/-/blob/main/projectWorkflow.md) for downloading the starter code for the project, updating your code on coursework using Git, and ultimately submitting to Gradescope for autograding.** We recommend that you read and follow the directions carefully this first time working on a project! While coding, we recommend that you periodically (perhaps when completing a method or small section) push your changes as explained in Section 5.
 
 
 ## Coding in Project P0: Person201
 
-When you fork and clone the project, **make sure you open the correct project folder in VS Code** following the [This document details the workflow](https://coursework.cs.duke.edu/201fall25/resources-201/-/blob/main/projectWorkflow.md).
+When you fork and clone the project, **make sure you open the correct project folder in VS Code** following the [This document details the workflow](https://coursework.cs.duke.edu/201spring26/resources-201/-/blob/main/projectWorkflow.md).
 
 You will be working primarily with the `.java` files in the `src` folder beginning with `Person201.java`. You will modify two programs/classes (`Person201.java`,  `Person201Demo.java`), and will run `Person201Nearby.java` to see if your changes are working. Then you will create a new program called `Person201Farthest.java`.
 
@@ -67,4 +67,4 @@ Answer the questions in the assignment. You'll submit your analysis as a PDF doc
 ***After completing the analysis questions you submit your answers in a PDF to Gradescope in the appropriate assignment.***
 
 ## Submission and Grading
-You will submit the assignment on Gradescope. You can access Gradescope through the tab on Canvas. The [project workflow writeup](https://coursework.cs.duke.edu/201fall25/resources-201/-/blob/main/projectWorkflow.md) explains the how to submit your project in detail. Be sure to push changes often and be sure your final program is in your Git repository before you submit it for autograding on Gradescope. Please take note that changes/commits on GitLab are NOT automatically synced to Gradescope. You are welcome to submit as many times as you like, only the most recent submission will count for a grade.
+You will submit the assignment on Gradescope. You can access Gradescope through the tab on Canvas. The [project workflow writeup](https://coursework.cs.duke.edu/201spring26/resources-201/-/blob/main/projectWorkflow.md) explains the how to submit your project in detail. Be sure to push changes often and be sure your final program is in your Git repository before you submit it for autograding on Gradescope. Please take note that changes/commits on GitLab are NOT automatically synced to Gradescope. You are welcome to submit as many times as you like, only the most recent submission will count for a grade.
