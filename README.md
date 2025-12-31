@@ -31,7 +31,7 @@ An example of a dialog with DukeGPT asking about the code
 is accessible [in this downloaded DukeGPT example](docs/gson-reader-close.md) (2 points)
 3. Modify the definition of `Person p` in the file [`PostPerson.java`](src/PostPerson.java) program
 to represent you, and run the program to post the information for the class to use. You must
-submit the same information [via this form](https://forms.cloud.microsoft/r/kyH16BCMzi) (2 points)
+submit the same information [via this form](https://forms.office.com/r/4pgpH2ndGa) (2 points)
 
     *Note:* For the last engagement points you should use the latitude and longitude (Note that latitude is positive north of the equator, negative south; longitude is negative west of the Prime/Greenwich Meridian and positive east. Durham, NC is (35.9956, -78.9002)) of where you last went to high school, 
 You can use your real name or you can use a pseudonym. 

@@ -55,6 +55,16 @@
     "cuisine": "Southern BBQ"
   },
   {
+    "name": "Chipotle",
+    "address": "737 9th Street 220 Durham, NC 27705",
+    "cuisine": "Tex-Mex"
+  },
+  {
+    "name": "Tous Les Jours",
+    "address": "744 9th St Durham, NC 27705",
+    "cuisine": "Bakery and Beverages"
+  },
+  {
     "name": "Wheat",
     "address": "810 9th St, Ste 130, Durham, NC 27705",
     "cuisine": "Asian Noodles, Desert"
