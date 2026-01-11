@@ -35,7 +35,7 @@ submit the same information [via this form](https://forms.office.com/r/4pgpH2ndG
 
     *Note:* For the last engagement points you should use the latitude and longitude (Note that latitude is positive north of the equator, negative south; longitude is negative west of the Prime/Greenwich Meridian and positive east. Durham, NC is (35.9956, -78.9002)) of where you last went to high school, 
 You can use your real name or you can use a pseudonym. 
-For the final parameter, you **should use the name of one your favorite 9th street eateries**. 
+For the final parameter, you **should use the name of one of your favorite 9th street eateries**. 
 It must be a restaurant from the [JSON file of restaurants](data/restaurants_ninth.json).
  
 
@@ -45,6 +45,7 @@ It must be a restaurant from the [JSON file of restaurants](data/restaurants_nin
 Peruvian chicken    	Alpaca
 Vietnamese & Chinese	Banh's Cuisine
 Korean fried chicken	Chicken Bee
+Tex-Mex                 Chipotle
 Casual market, café 	Common Market
 Tex-Mex             	Cosmic Cantina
 American pub        	Dain's Place
@@ -76,6 +77,7 @@ Oysters/Seafood     	Shuckin' Shack
 Fast‑food sandwiches	Subway
 Szechuan hot pot    	Szechuan Mansion Hotpot
 Burgers, Pizza      	The Loop
+Bakery and Beverages    Tous Les Jours
 Dive Bar/Tavern     	The Tavern
 French bistro       	Vin Rouge
 Asian Noodles, Desert	Wheat
@@ -148,15 +150,15 @@ You're now done editing `Person201.java` and `Person201Demo.java` !
 
 Run the program `Person201Nearby`. It reads a data file and finds all the people in the data 
 file who are within 50 miles of a person named Ricardo who lives near Seattle. 
-The program prints there are 16 people when run as you downloaded the file. 
+The program prints there are 16 people when run using the downloaded (from Git repo) file. 
 
 Change the value of the variable `threshold` until exactly 3 people live within `threshold` 
 miles of Ricardo. **Find the smallest `threshold` value that yields 3 people**, 
 so that any value less will yield two people. You'll report on this value and how you obtained it in answering the *analysis questions* below.
 
-Lines 14-16 in `Person201Nearby` specify three data sources: a regular text file 
-named `foodlarge.txt` in the `data` folder, a `foodsmall.txt` file in the `data` folder (line 15), 
-and a URL (line 16). 
+Lines 15-17 in `Person201Nearby` specify three data sources: a regular text file 
+named `foodlarge.txt` in the `data` folder, a `foodsmall.txt` file in the `data` folder (line 16), 
+and a URL (line 17). 
 
 How many people live within 50 miles of Ricardo when using the file `foodsmall` as the data source? You should run the program and be able to answer this question given a new data file as well as with the two provided. 
 
