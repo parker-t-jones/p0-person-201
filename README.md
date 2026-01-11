@@ -195,8 +195,8 @@ to help model what the comments might look like.
 ### Modifying the code in `CountEateries.java`
 
 The code you download includes a class `CountEateries` that reads a file of data, e.g., `data/foodlarge.txt` 
-and determines how many `Person201` objects like each of the 38 different Ninth Street eateries (there
-are 38 different eateries in the [JSON file](data/restaurants_ninth.json) in folder `data`, 
+and determines how many `Person201` objects like each of the 40 different Ninth Street eateries (there
+are 40 different eateries in the [JSON file](data/restaurants_ninth.json) in folder `data`, 
 but only 32 different eateries in the file read for this program: [`data/foodlarge.txt`](data/foodlarge.txt). When run, this count is printed as zero/0 for each eatery **until you modify/add to the code in method `countEateries`** which initially returns zero for every value of parameter `eatery`. You'll need to write code to count how many `Person201` objects, say named `p`, in the array parameter `people` have `p.eatery().equals(eatery)`. Write code by looping over the array and checking every object's `.eatery()` value for equality with parameter `eatery`. Copy/paste the output you get into your **analysis questions** document.
 
 The last several lines of eatery data should be:
