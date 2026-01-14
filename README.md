@@ -231,7 +231,7 @@ You'll submit by pushing your code to Git and using Gradescope. Details can be f
 ## Analysis
 
 Answer all the questions here. As outlined in [this document](docs/details.md) you'll submit a PDF with your answers to 
-Gradescope as a separate assignment.
+Gradescope as a separate assignment. You can use [this  .docx file](docs/p0-analysis.docx) as a template to upload to Gradescope
 
 ### Question 1 (2 points)
 - See this [example dialog with DukeGPT](docs/dukegpt-static-methods.md) asking the LLM to explain something 
