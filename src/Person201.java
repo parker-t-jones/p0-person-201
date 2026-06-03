@@ -24,6 +24,8 @@ public class Person201 {
         this.eatery = eatery;
     }
 
+    // TODO add default constructor
+    
     // getters, comments maybe superfluous?
     
     public String name(){

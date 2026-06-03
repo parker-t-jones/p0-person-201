@@ -7,9 +7,10 @@ import com.google.gson.*;
  * Create a post request to a 201 REST server
  * to record json information for compsci 201,
  * fall 2021.
- * @Version 2: Fall 2024, updated network code
+ * @version 2: Fall 2024, updated network code
  * and changed Person201 to include 9th street eatery as final string
- * @Version 3: Fall 2025, modified URL to be current for Fall 2025 semester
+ * @version 3: Fall 2025, modified URL to be current for Fall 2025 semester
+ * @version 3.1: modified for Fall 2026 (todo)
  * 
  * @author Owen Astrachan, ola@duke.edu
  */

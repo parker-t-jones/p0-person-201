@@ -1,6 +1,8 @@
-# Project 0: Person201, Spring 2026
+# Project 0: Person201, Fall 2026
 
 ## Obtaining Project Code and Project Details
+
+** NOT UPDATED FOR FALL 2026 **
 
 For details and FAQs, see [this _details_ document](docs/details.md) that has information on git, Java, the classes here, and more. This current file you're reading has project and coding details, but the linked document has more Java and git details, particularly about starting to code. That linked document includes information about project workflow including submitting code and analysis for grading via _Gradescope_. **Be sure to check [the _detail_ document](https://coursework.cs.duke.edu/201spring26/resources-201/-/blob/main/projectWorkflow.md) for how to use Git to obtain the project files, and workarounds if Git doesn't work yet for you. You'll need to refer to this P0 document when forking and cloning.**
 

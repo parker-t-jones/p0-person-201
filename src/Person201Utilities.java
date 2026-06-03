@@ -10,6 +10,7 @@ import java.net.*;
  * 
  * @author Owen Astrachan
  * @version 2.0, updated URI/URL code to be current with recent Java
+ * @version 2.1, added read(...) method to call readFile or readURL
  */
 
 public class Person201Utilities {
@@ -60,7 +61,7 @@ public class Person201Utilities {
      * @return array of Person201 objects read
      * @throws IOException if file/reading don't work
      */
-    public static Person201[] readFile(String fname) throws IOException {
+    private static Person201[] readFile(String fname) throws IOException {
         Scanner s = new Scanner(new File(fname));
         Person201[] result = readFromScanner(s);
         s.close();
@@ -74,7 +75,7 @@ public class Person201Utilities {
      * @return array of Person201 objects read
      * @throws IOException if file/reading don't work
      */
-    public static Person201[] readURL(String address) throws Exception {
+    private static Person201[] readURL(String address) throws Exception {
 
         URI uri = new URI(address);
         URL url = uri.toURL();
@@ -82,6 +83,21 @@ public class Person201Utilities {
         Person201[] result = readFromScanner(s);
         s.close();
         return result;
+    }
+
+    /**
+     * return result of reading a file or a URL
+     * @param address is accessible file or URL
+     * @return array of Person201 objects read
+     * @throws Exception file/web reading fails
+     */
+    public static Person201[] read(String address) throws Exception {
+        if (address.startsWith("http")) {
+            return readURL(address);
+        }
+        else {
+            return readFile(address);
+        }
     }
 
     /**
