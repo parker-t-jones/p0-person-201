@@ -2,8 +2,6 @@
 
 ## Obtaining Project Code and Project Details
 
-** NOT UPDATED FOR FALL 2026 **
-
 For details and FAQs, see [this _details_ document](docs/details.md) that has information on git, Java, the classes here, and more. This current file you're reading has project and coding details, but the linked document has more Java and git details, particularly about starting to code. That linked document includes information about project workflow including submitting code and analysis for grading via _Gradescope_. **Be sure to check [the _detail_ document](https://coursework.cs.duke.edu/201fall26/resources-201/-/blob/main/projectWorkflow.md) for how to use Git to obtain the project files, and workarounds if Git doesn't work yet for you. You'll need to refer to this P0 document when forking and cloning.**
 
 ## Use of ChatGPT
@@ -102,115 +100,6 @@ When you fork and clone the project, you'll be working primarily within the src 
 Fall 2026 (and in Fall 2025) by creating a class/program `PopularEatery`.  
 
 
-### Run `Person201Demo.java` and change `Person201.java`
-
-First run the main method in `Person201Demo.java`, the output will be:
-
-```
-(037.80N,122.27W) claire, "Vin Rouge"
-(001.29S,036.82E) ricardo, "Elmo's Diner"
-(040.71N,073.96W) julie, "Alpaca"
-names: claire, ricardo, julie
-Sam to Fred distance = 424.611 
-```
-
-Make changes to `Person201.java` by creating a _default constructor_ and then changing the definition of `Person201 c` in `Person201Demo` that's currently defined as someone named **julie** to 
-be `Person201 c = new Person201()` (note: _default constructor_ called). 
-You must edit `Person201.java` so that with this change the output of `Person201Demo` will be as shown below. 
-See the [*help-doc/FAQ*](docs/details.md) for more details on default constructors. 
-Note that the third line is now different since a _default constructor_ is called.
-
-```
-(037.80N,122.27W) claire, "Vin Rouge"
-(001.29S,036.82E) ricardo, "Elmo's Diner"
-(035.99N,078.90E) Owen, "Dain's Place"
-names: claire ricardo Owen
-Sam to Fred distance = 424.611
-```
-
-Now that you've done this, make an additional change to the `main` method in file `Person201Demo.java` by creating 
-a new `Person201` object assigned to the variable named `s` as follows:
-
-`Person201 s = new Person201("Ethan", 40.6782, 73.0442, "Monuts");`
-
-Next, change the definition of the array `data` to include `s` such that `s` appears after `c`, e.g., 
-`Person201[] data = {a,b,c,s}`. Run the program,  the output should be as shown here (note `c` still using default constructor):
-
-```
-(037.80N,122.27W) claire, "Vin Rouge"
-(001.29S,036.82E) ricardo, "Elmo's Diner"
-(035.99N,078.90E) Owen, "Dain's Place"
-(040.68N,073.04E) Ethan, "Monuts"
-names: claire, ricardo, Owen
-Sam to Fred distance = 424.611
-```
-
-You're now done editing `Person201.java` and `Person201Demo.java` !
-
-
-### Running Person201Nearby and changing the Data Source
-
-Run the program `Person201Nearby`. It reads a data file and finds all the people in the data 
-file who are within 50 miles of a person named Ricardo who lives near Seattle. 
-The program prints there are 16 people when run using the downloaded (from Git repo) file. 
-
-Change the value of the variable `threshold` until exactly 3 people live within `threshold` 
-miles of Ricardo. **Find the smallest `threshold` value that yields 3 people**, 
-so that any value less will yield two people. You'll report on this value and how you obtained it in answering the *analysis questions* below.
-
-Lines 15-17 in `Person201Nearby` specify three data sources: a regular text file 
-named `foodlarge.txt` in the `data` folder, a `foodsmall.txt` file in the `data` folder (line 16), 
-and a URL (line 17). 
-
-How many people live within 50 miles of Ricardo when using the file `foodsmall` as the data source? You should run the program and be able to answer this question given a new data file as well as with the two provided. 
-
-Change the code so that it reads data from the URL specified by the variable `largeURL`. You'll need to call the appropriate method in `Person201Utilities` to read a URL for a file, e.g., rather than calling `readFile` you'll call `readURL`. Verify that you get the same results from the URL as from the file in the data folder --  since that URL references the same data as the file `foodlarge` in the `data` folder. 
-
-
-### Create and Run a New Java Class: **Person201Farthest**
-
-In the `src` folder create a new Java class named `Person201Farthest` (name the file `Person201Farthest.java`) that has only a `public static void main method` that allows the program to run. When run, the 
-method should read the file `foodlarge.txt` in the `data` folder and determine the 
-two distinct `Person201` objects that are the farthest apart. 
-You may find the code in `Person201Nearby.java` useful in reasoning about the code you write. 
-The program should print the two distinct objects that are farthest apart among all the 
-objects created and returned when `PersonUtilities.readFile` is called from the code you write.
-
-The `main` method you write *must* use the code below 
-```
-public static void main(String[] args) throws Exception {
-        String file = "data/foodlarge.txt";
-        double max = 0;
-        Person201 a = null;
-        Person201 b = null;
-        // TODO: finish this method 
-        System.out.printf("farthest distance is %3.2f between %s and %s\n",max,a.name(),b.name());
-    }
-```
-See [the details](docs/details.md) documentation for details/hints.
-
-**If you use DukeGPT/LLMs to help with the code**,  you should indicate that in the comments
-of the new class you've written: `Person201Farthest.java`. You should also include Javadoc 
-comments in your source code file that include an @author tag. See the files you're given
-to help model what the comments might look like.
-
-### Modifying the code in `CountEateries.java`
-
-The code you download includes a class `CountEateries` that reads a file of data, e.g., `data/foodlarge.txt` 
-and determines how many `Person201` objects like each of the 40 different Ninth Street eateries (there
-are 40 different eateries in the [JSON file](data/restaurants_ninth.json) in folder `data`, 
-but only 32 different eateries in the file read for this program: [`data/foodlarge.txt`](data/foodlarge.txt). When run, this count is printed as zero/0 for each eatery **until you modify/add to the code in method `countEateries`** which initially returns zero for every value of parameter `eatery`. You'll need to write code to count how many `Person201` objects, say named `p`, in the array parameter `people` have `p.eatery().equals(eatery)`. Write code by looping over the array and checking every object's `.eatery()` value for equality with parameter `eatery`. Copy/paste the output you get into your **analysis questions** document.
-
-The last several lines of eatery data should be:
-```
-3:	The Loop
-2:	The Tavern
-6:	Vin Rouge
-4:	Zenfish Poke Bar
---------
-total = 97
-```
-
 ## Checklist
 
 Before you submit to Gradescope, check that you've done each of the following:
@@ -222,9 +111,6 @@ Before you submit to Gradescope, check that you've done each of the following:
 - Create a new class `Person201Farthest` (in a new file named accordingly) with a `main` method to find the two distinct (i.e., inequal) people furthest apart from each other.
 - Modify method `countEateries` in class `CountEateries` so it finds data appropriately.
 
-## Challenge Problem and program
-
-Using the concepts and code from `PeopleDownloder` and `Counteateries`, write a new class `Popularity` in which you copy/paste and add code so that when the program is executed it determines at least the most chosen ninth-street eatery accessible via the file accessed when `PeopleDownloader` is run, preferably using that code. You can also simply download that data and write a program, but then your program won't be processing data dynamically. You can try to find the top 5 or 10 eateries rather than simply the top one. If you do this challenge problem, you'll submit the program you write as part of pushing to Git, but you should make sure there's a section in your Analysis document that describes your results and the methodology you used in writing the program. If you complete this challenge, you'll gain a great sense of satisfaction and you can earn 5 engagement points as well.
 
 ## Submission
 
