@@ -116,42 +116,7 @@ Before you submit to Gradescope, check that you've done each of the following:
 
 You'll submit by pushing your code to Git and using Gradescope. Details can be found in [the details/FAQ](docs/details.md).
 
-## Analysis
 
-Answer all the questions here. As outlined in [this document](docs/details.md) you'll submit a PDF with your answers to 
-Gradescope as a separate assignment. You can use [this  .docx file](docs/p0-analysis.docx) as a template to upload to Gradescope
-
-### Question 1 (2 points)
-- See this [example dialog with DukeGPT](docs/dukegpt-static-methods.md) asking the LLM to explain something 
-about static methods. Choose a Java concept that you have a question about, ask DukeGPT about the concept, and
-download the dialog as a PDF which you'll include as part of the PDF you upload to Gradescope.
-
-
-### Question 2 (2 points)
-
-What is the smallest value of variable `threshold` in `Person201Nearby` that yields exactly three people near to Ricardo. 
-Write a few sentences about how you found the value, essentially providing an algorithm for anyone to replicate 
-your work so that with a different/new data file they could find the smallest such value **efficiently**.
-
-
-### Question 3 (2 points)
-The online data for this project read via URL is **not encrypted**. See
-this [DukeGPT dialog about why it might be a good idea to encrypt](docs/dukegpt-peopledownloader.md) and
-provide a few sentences about what makes sense and what doesn't in the answer DukeGPT provided.
-
-### Question 4 (1 point)
-According to the `.equals` method of the `Person201` class, when are two `Person201` objects considered to be equal? 
-Is it case sensitive for their names or for their 
-phrases? (Case sensitive means different answers are returned depending on capitalization). If you use DukeGPT or an LLM
-to help answer this question, please include that dialog.
-
-### Question 5 (1 point)
-
-Copy/paste the output you get from modiying the method `countEateries`
-in the file `CountEateries.java` based on the description above.
-
-### Challenge
-If you complete the challenge, please write up what you found. 
 
 ## Grading
 
