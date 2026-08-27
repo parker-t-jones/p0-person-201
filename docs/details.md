@@ -1,4 +1,4 @@
-# Details for P-Person201, Fall 2026
+# Details for P0-Person201, Fall 2026
 
 You should have already read the [README](../README.md) file to get an overview of the project. The details here are designed to help you complete the project once you have a general idea of what the project is about.
 
@@ -151,16 +151,53 @@ total = 97
 total # eateries = 32
 ```
 
-### Interlude: Understanding Multi-file Programs 
+## Challenge Problem and program
+
+Using the concepts and code from `PeopleDownloder` and `Counteateries`, write a new class `Popularity` in which you copy/paste and add code so that when the program is executed it determines *at least the most chosen* ninth-street eatery accessible via the file accessed when `PeopleDownloader` is run. You can also simply download that data and write a program, but then your program won't be processing data dynamically. You can try to find the top 5 or 10 eateries rather than simply the top one. If you do this challenge problem, you'll submit the program you write as part of pushing to Git, but you should make sure there's a section in your Analysis document that describes your results and the methodology you used in writing the program. If you complete this challenge, you'll gain a great sense of satisfaction and you can earn 5 engagement points as well.
+
+## Interlude: Understanding Multi-file Programs 
 
 Most software consists of **many** different files, each organized into smaller units called `methods` in Java (or functions in other languages). This practice helps us to keep code organized into comprehensible units. 
 
 For this project, `Person201.java` defines `Person201` objects (what state, or data they hold and what basic operations they support), `Person201Utilities.java` defines static methods that do things having to do with multiple `Person201` objects, and `Person201Nearby.java` uses `Person201` objects and `Person201Utilities` methods to search for nearby people given a data source. 
 
 
-
 ## Analysis Questions
 
+Answer all the questions here. As outlined in [this document](docs/details.md) you'll submit a PDF with your answers to 
+Gradescope as a separate assignment. You can use [this  .docx file](docs/p0-analysis.docx) as a template to upload to Gradescope
+
+### Question 1 (2 points)
+- See this [example dialog with DukeGPT](docs/dukegpt-static-methods.md) asking the LLM to explain something 
+about static methods. Choose a Java concept that you have a question about, ask DukeGPT about the concept, and
+download the dialog as a PDF which you'll include as part of the PDF you upload to Gradescope.
+
+
+### Question 2 (2 points)
+
+What is the smallest value of variable `threshold` in `Person201Nearby` that yields exactly three people near to Ricardo. 
+Write a few sentences about how you found the value, essentially providing an algorithm for anyone to replicate 
+your work so that with a different/new data file they could find the smallest such value **efficiently**.
+
+
+### Question 3 (2 points)
+The online data for this project read via URL is **not encrypted**. See
+this [DukeGPT dialog about why it might be a good idea to encrypt](docs/dukegpt-peopledownloader.md) and
+provide a few sentences about what makes sense and what doesn't in the answer DukeGPT provided.
+
+### Question 4 (1 point)
+According to the `.equals` method of the `Person201` class, when are two `Person201` objects considered to be equal? 
+Is it case sensitive for their names or for their 
+phrases? (Case sensitive means different answers are returned depending on capitalization). If you use DukeGPT or an LLM
+to help answer this question, please include that dialog.
+
+### Question 5 (1 point)
+
+Copy/paste the output you get from modiying the method `countEateries`
+in the file `CountEateries.java` based on the description above.
+
+### Challenge
+If you complete the challenge, please write up what you found. 
 Answer the questions in the assignment. You'll submit your analysis as a PDF document **as a separate assignment to Gradescope**. To create a PDF, use a word processing program like Microsoft Word or Google Doc, then choose print and save-as-PDF.
 
 ***After completing the analysis questions you submit your answers in a PDF to Gradescope in the appropriate assignment.***
