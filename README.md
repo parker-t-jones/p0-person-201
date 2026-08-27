@@ -1,14 +1,16 @@
 # Project 0: Person201, Fall 2026
 
-## Obtaining Project Code and Project Details
+## Project Overview
 
-For details and FAQs, see [this _details_ document](docs/details.md) that has information on git, Java, the classes here, and more. This current file you're reading has project and coding details, but the linked document has more Java and git details, particularly about starting to code. That linked document includes information about project workflow including submitting code and analysis for grading via _Gradescope_. **Be sure to check [the _detail_ document](https://coursework.cs.duke.edu/201fall26/resources-201/-/blob/main/projectWorkflow.md) for how to use Git to obtain the project files, and workarounds if Git doesn't work yet for you. You'll need to refer to this P0 document when forking and cloning.**
+For project details including git, programming, and analysis, see [this _details_ document](docs/details.md). This document
+supplies a high-level overview of what the project is about.
+
 
 ## Use of ChatGPT
 
 You'll be asked to engage with DukeGPT/ChatGPT in specific ways to answer some questions that are part 
-of the required *analysis* questions that are part of each project in 201. You'll [see those
-questions and details in the Analysis section](#analysis) below.
+of the required *analysis* questions that are part of each project in 201. If you use any LLM to actually *write* code,
+as opposed to helping *you write code*, you should indicate that in the answer to the appropriate analysis qurestion.
 
 ## Goals
 
