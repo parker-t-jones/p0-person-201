@@ -10,14 +10,14 @@ import com.google.gson.*;
  * @version 2: Fall 2024, updated network code
  * and changed Person201 to include 9th street eatery as final string
  * @version 3: Fall 2025, modified URL to be current for Fall 2025 semester
- * @version 3.1: modified for Fall 2026 (todo)
- * 
+ * @version 3.1: modified for Fall 2026
+
  * @author Owen Astrachan, ola@duke.edu
  */
 
 public class PostPerson {
 
-    static String URL = "https://courses.cs.duke.edu/compsci201/spring26/data/p0/upload201.php";
+    static String URL = "https://courses.cs.duke.edu/compsci201/fall26/data/p0/upload201.php";
 
     /**
      * Create a post request to the specified URL and
@@ -29,6 +29,7 @@ public class PostPerson {
     public void postJson(String url, Person201 p) {
         Gson gs = new Gson();
         String str = gs.toJson(p);
+        System.out.printf("js = %s\n",str);
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(url))
@@ -52,7 +53,7 @@ public class PostPerson {
     public static void main(String[] args) {
         PostPerson pp = new PostPerson();
 
-        Person201 p = new Person201("Gretchen",78.2253,-15.6256,"Subway");
+        Person201 p = new Person201("Gretchen",78.2253,-15.6256,"Cosmic Cantina");
         pp.postJson(URL,p);
     }
 }

@@ -22,7 +22,7 @@ public class Person201Demo {
 
         System.out.printf("names: %s, %s, %s\n",a.name(),b.name(),c.name());
 
-        Person201 p = new Person201("Sam", 38.6, 90.19, "Common Market");                               
+        Person201 p = new Person201("Sam", 38.6, -90.19, "Common Market");                               
         Person201 q = new Person201("Fred", 41.88, 87.63, "Local 22");                             
                                                                                                
         double d = Person201Utilities.distance(p,q);

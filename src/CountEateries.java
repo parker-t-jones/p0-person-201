@@ -40,8 +40,8 @@ public class CountEateries {
      * @param filename is accessible with properly formatted data for Person201 objects
      * @throws IOException if file can't be read, rethrown from Person201Utilities
      */
-    public void doWork(String filename) throws IOException{
-        Person201[] people = Person201Utilities.readFile(filename);
+    public void doWork(String filename) throws Exception{
+        Person201[] people = Person201Utilities.read(filename);
         TreeSet<String> eateries = new TreeSet<>();
         for(Person201 p : people){
             eateries.add(p.eatery());
@@ -54,8 +54,9 @@ public class CountEateries {
             System.out.printf("%d:\t%s\n",count,eat);
         }
         System.out.printf("--------\ntotal = %d\n",total);
+        System.out.printf("total # eateries = %d\n",eateries.size());
     }
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws Exception{
         CountEateries eats = new CountEateries();
         String fname = "data/foodlarge.txt";
         eats.doWork(fname);
