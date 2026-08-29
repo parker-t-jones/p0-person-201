@@ -180,7 +180,7 @@ Write a few sentences about how you found the value, essentially providing an al
 your work so that with a different/new data file they could find the smallest such value **efficiently**.
 
 
-### Question 3 (2 points)
+### Question 3 (1 points)
 The online data for this project read via URL is **not encrypted**. See
 this [DukeGPT dialog about why it might be a good idea to encrypt](docs/dukegpt-peopledownloader.md) and
 provide a few sentences about what makes sense and what doesn't in the answer DukeGPT provided.
@@ -195,6 +195,10 @@ to help answer this question, please include that dialog.
 
 Copy/paste the output you get from modiying the method `countEateries`
 in the file `CountEateries.java` based on the description above.
+
+### Question 6 (1 point)
+
+Explain how, if at all, you used LLMs in completing this assignment.
 
 ### Challenge
 If you complete the challenge, please write up what you found. 
